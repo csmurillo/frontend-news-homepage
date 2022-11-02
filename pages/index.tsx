@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header';
+import MainNews from '../components/MainNews';
+import News from '../components/News';
+import FeaturedNews from '../components/FeaturedNews';
 
 export default function Home() {
   return (
@@ -12,8 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='px-5 pt-4'>
+      <main className='px-5 lg:px-20 pt-4'>
         <Header/>
+        <div className='md:flex md:gap-5'>
+          <MainNews/>
+          <News/>
+        </div>
+        <FeaturedNews/>
       </main>
     </div>
   )
