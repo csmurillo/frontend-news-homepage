@@ -22,7 +22,7 @@ const Header: React.FC = ()=>{
     };
 
     return(
-        <header className='flex justify-between pb-8'>
+        <header className='flex justify-between mb-8 lg:mb-14'>
             <div>
                 <Image src={Logo} alt="W company logo"/>
             </div>
@@ -32,11 +32,11 @@ const Header: React.FC = ()=>{
             <div className='sm:flex hidden items-center'>
                 <nav>
                     <ul className='flex gap-10'>
-                        <li>Home</li>
-                        <li>New</li>
-                        <li>Popular</li>
-                        <li>Trending</li>
-                        <li>Categories</li>
+                        <li className="hover:text-softRed hover:cursor-pointer">Home</li>
+                        <li className="hover:text-softRed hover:cursor-pointer">New</li>
+                        <li className="hover:text-softRed hover:cursor-pointer">Popular</li>
+                        <li className="hover:text-softRed hover:cursor-pointer">Trending</li>
+                        <li className="hover:text-softRed hover:cursor-pointer">Categories</li>
                     </ul>
                 </nav>
             </div>
