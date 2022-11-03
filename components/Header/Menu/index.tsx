@@ -8,11 +8,11 @@ type MenuType = {
 
 const Menu = ({close}:MenuType)=>{
     return (
-        <div className="absolute top-0 left-0 w-full h-full flex sm:hidden">
+        <div className="absolute top-0 left-0 w-full h-full flex sm:hidden z-50">
             <div className='bg-black w-40 opacity-70'>
 
             </div>
-            <div className='bg-white flex-1 h-full pt-4 px-5'>
+            <div className='bg-white flex-1 h-full pt-7 px-6'>
                 <div className='flex justify-end mb-20'>
                    <Image className='cursor-pointer' src={Close} alt="close menu" onClick={close}/>
                 </div>

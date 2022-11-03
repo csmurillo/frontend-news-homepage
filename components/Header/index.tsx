@@ -12,15 +12,17 @@ const Header: React.FC = ()=>{
     const [menu,setMenu]=useState(false);
 
     const openMenu = ()=>{
+        document.getElementsByTagName('body')[0].classList.add("overflow-hidden");
         setMenu(true);
     };
 
     const closeMenu = ()=>{
+        document.getElementsByTagName('body')[0].classList.remove("overflow-hidden");
         setMenu(false);
     };
 
     return(
-        <header className='flex justify-between'>
+        <header className='flex justify-between pb-8'>
             <div>
                 <Image src={Logo} alt="W company logo"/>
             </div>
